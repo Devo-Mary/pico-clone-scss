@@ -1,0 +1,40 @@
+/* SECTION */
+section{
+    width: 70%;
+}
+article,
+article > header{
+    background-color: var(--body-color);
+    border-bottom: none;
+}
+article{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+
+    & > header{
+        padding: 0;
+    }
+
+    & > footer{
+        padding: 10px 0;
+
+        & > a{
+            color: var(--link-color);
+            background-color: var(--bg-color);
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 1s;
+
+            &:hover{
+                background-color: var(--silver);
+                color: var(--bg-color);
+            }
+        }
+    }
+
+    > p{
+        margin-bottom: 10px;
+    }
+}
